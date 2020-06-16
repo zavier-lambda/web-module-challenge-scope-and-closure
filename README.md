@@ -42,6 +42,7 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+  Due to closure, inner functions can access variables from a higher level scope if they have been declared above; however, higher level scope cannot access lower level declarations. 
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,8 +64,13 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+  When the second function is invoked, it calls on name from its parent function.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  The first and second invocation will return the same name and text afterwards. What does change is the number rolled. 
+
 c. What is the lexical scope of `newRoll`? 
+  newRoll belongs to function()  
 
 ### Task 2c - Exit Ticket
 
